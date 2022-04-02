@@ -1,0 +1,33 @@
+.card {
+    transform-style: preserve-3d;
+    margin: 0.5em 0;
+    box-shadow: 9px 5px 15px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2); */
+    text-align: center;
+}
+
+.icon-section {
+    padding: 3rem 0;
+}
+
+.circle-icon {
+    /* background: #C41230; */
+    color: #f5f5ef;
+    width: 14rem;
+    height: 12rem;
+    border-radius: 50%;
+    text-align: center;
+    /* line-height: 12rem; */
+    vertical-align: middle;
+    padding: 1rem 3rem;
+}
+
+.card-title,
+.card-text,
+.list-group-item span {
+    transition: all 0.5s ease;
+}
+
+.card-text {
+    font-size: 0.9em;
+}

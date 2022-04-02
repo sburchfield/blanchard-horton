@@ -1,0 +1,18 @@
+footer {
+    padding: 3em 0;
+}
+
+footer a,
+footer h6 {
+    font-weight: 100;
+}
+
+footer section {
+    margin: 0.5em 0 1em 0;
+    display: inline-block;
+}
+
+footer a {
+    color: #fff;
+    padding: 0 1em;
+}

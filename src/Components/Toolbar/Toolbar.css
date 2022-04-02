@@ -1,0 +1,66 @@
+.logo {
+    background-image: url(../../images/bh_logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 3.5em;
+    width: 10rem;
+}
+
+.toolbar {
+    width: 100%;
+    z-index: 300;
+    padding: 1rem 4rem;
+    position: fixed;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.toolbar_nav {
+    transition: background-color 500ms linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.logo_wrapper {
+    margin-left: 0.5em;
+}
+
+.toolbar_nav_right {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.toolbar_nav_right li {
+    padding: 1rem 0.5rem;
+}
+
+.socialIcons a {
+    font-size: 1.5rem;
+    line-height: 1rem;
+}
+
+.toolbar_nav_right li a,
+.socialIcons a {
+    color: #000;
+    text-decoration: none;
+}
+
+.toolbar_nav_right li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .toolbar_nav_right {
+        display: none;
+    }
+    .socialIcons {
+        visibility: hidden;
+    }
+}

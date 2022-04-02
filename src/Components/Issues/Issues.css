@@ -1,0 +1,16 @@
+#more {
+    padding: 1em 6em;
+}
+
+.issuesWrapper {
+    padding: 0 1em;
+}
+
+@media (max-width: 1200px) {
+    #issuesInner {
+        padding: 1em;
+    }
+    .issuesWrapper {
+        padding: 0;
+    }
+}

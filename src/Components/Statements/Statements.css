@@ -1,0 +1,16 @@
+.statementsWrapper {
+    padding: 2rem 4rem;
+}
+
+.statementsWrapper p {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    text-indent: 1.25rem;
+}
+
+.color-card {
+    height: 18rem;
+    padding: 2rem 0 0 0;
+    color: #fff;
+}

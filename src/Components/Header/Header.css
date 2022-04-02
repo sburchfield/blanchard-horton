@@ -1,0 +1,74 @@
+header {
+    background-image: url(../../images/law-man.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 52rem;
+    color: #f5f5ef;
+}
+
+.header-logo {
+    background-image: url(../../images/bh_logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 15rem;
+    width: 100%;
+    margin: 12rem auto 0 auto;
+}
+
+.scroll-link a {
+    font-size: 1.75rem;
+    color: #f5f5ef;
+    height: 3rem;
+    width: 3rem;
+    display: inline-block;
+    margin-top: 8rem;
+    text-decoration: none;
+}
+
+.scroll-link a:hover {
+    cursor: pointer;
+    color: #9FA1A4;
+}
+
+header h2 {
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+header h3 {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+header h3 span {
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+header h4 {
+    font-size: 1.25rem;
+    font-weight: 200;
+}
+
+.headerWrapper {
+    padding-top: 3rem;
+}
+
+@media only screen and (max-width: 838px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    header h2 {
+        font-size: 0.9rem;
+    }
+    header h3 {
+        font-size: 0.5rem;
+    }
+    header h3 span {
+        padding: 0 0.25rem 0 0.25rem;
+    }
+    header h4 {
+        font-size: 0.3rem;
+    }
+}

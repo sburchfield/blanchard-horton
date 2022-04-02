@@ -1,38 +1,54 @@
 .App {
-  text-align: center;
+    background-color: rgb(244, 247, 245);
+    color: rgb(37, 37, 37);
+    height: 100%;
+    width: 100%;
+    font-family: "Segoe UI", "Lucida Grande", "Lucida Sans", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-fluid {
+    padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.row {
+    margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.white {
+    color: #f5f5ef;
 }
 
-.App-link {
-  color: #61dafb;
+.background-white {
+    background-color: #f5f5ef;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.blue {
+    color: #1f2839;
+}
+
+.background-red {
+    background-color: #C41230;
+}
+
+.tan {
+    color: #b69d74;
+}
+
+.background-grey {
+    background-color: #9FA1A4;
+}
+
+.filter {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: rgba(31, 40, 57, 0.7);
+    z-index: 50;
+}
+
+.inner-header-wrapper {
+    background-position: center;
+    background-size: cover;
+    height: 15rem;
+    width: 100%;
 }
