@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Row, Col, Button, Form, FormGroup, Label, Input} from 'reactstrap'
 
 
 import './Slogan.css';
