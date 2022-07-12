@@ -26,7 +26,7 @@ return(
               <h6>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h6>
           </div>
       </div>
-      <div className="container" style={{padding: "2rem 0"}}>
+      <div className="container ani-card-container">
       <div className="row justify-content-center">
         <AniCard
           title={"Patents"}

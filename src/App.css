@@ -52,3 +52,20 @@
     height: 15rem;
     width: 100%;
 }
+
+#desktop-phone {
+    display: none;
+}
+
+#mobile-phone {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    #desktop-phone {
+        display: block;
+    }
+    #mobile-phone {
+        display: none;
+    }
+}

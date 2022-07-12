@@ -6,7 +6,6 @@ import Home from './Pages/Home/Home'
 import About from './Pages/About/About'
 import OurTeam from './Pages/OurTeam/OurTeam'
 import Services from './Pages/Services/Services'
-import Highlights from './Pages/Highlights/Highlights'
 import Contact from './Pages/Contact/Contact'
 import Backdrop from './Components/Backdrop/Backdrop';
 import SideDrawer from './Components/SideDrawer/SideDrawer';
@@ -57,7 +56,6 @@ class App extends Component {
               <Route path={'/about'} component={About} />
               <Route path={'/our-team'} component={OurTeam} />
               <Route path={'/services'} component={Services} />
-              <Route path={'/highlights'} component={Highlights} />
               <Route path={'/contact'} component={Contact} />
             </Switch>
           </React.Fragment>

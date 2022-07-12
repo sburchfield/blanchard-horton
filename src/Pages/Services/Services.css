@@ -1,18 +1,24 @@
-#experiencesInner{
-	text-align: center;
-	padding: 0 1em;
+#experiencesInner {
+    text-align: center;
+    padding: 0 1em;
 }
 
-
-#experiencesInner h2{
-	letter-spacing: .05em;
-	font-size: 3.2em;
-	font-weight: bold;
-	padding-top: 0.5em;
+#experiencesInner h2 {
+    letter-spacing: .05em;
+    font-size: 3.2em;
+    font-weight: bold;
+    padding-top: 0.5em;
 }
 
-@media (max-width: 786px){
-	#experiencesInner{
-		padding: 0;
-	}
+.ani-card-container {
+    padding: 2rem;
+}
+
+@media (max-width: 786px) {
+    #experiencesInner {
+        padding: 0;
+    }
+    .ani-card-container {
+        padding: 2rem 0;
+    }
 }

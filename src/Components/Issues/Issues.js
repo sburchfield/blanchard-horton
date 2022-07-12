@@ -34,7 +34,7 @@ render() {
 return(
   <div id="more">
     <Row className="issuesWrapper justify-content-around">
-      <Col lg="4">
+      <Col lg="6" className="order-1 order-lg-1">
         <Pic
           title={"About"}
           description={desc}
@@ -42,7 +42,7 @@ return(
           img={monument}
           link={'/about'} />
       </Col>
-      <Col lg="4">
+      <Col lg="6" className="order-2 order-lg-2">
         <Pic
         title={"Services"}
         description={desc}
@@ -50,31 +50,21 @@ return(
         img={fireworks}
         link={'/services'} />
       </Col>
-      <Col lg="4">
+      <Col lg="6" className="order-4 order-lg-3">
         <Pic
         title={"Our Team"}
         description={desc}
-        bgColorValue={'#C41230'}
+        bgColorValue={'#9FA1A4'}
         img={tower}
         link={'/our-team'} />
       </Col>
-    </Row>
-    <Row className="projectsWrapper justify-content-center">
-      <Col lg="4">
+      <Col lg="6" className="order-3 order-lg-4">
       <Pic
       title={"Contact"}
       description={desc}
-      bgColorValue={'#9FA1A4'}
+      bgColorValue={'#C41230'}
       img={greatSmokeyMountains}
       link={'/contact'} />
-      </Col>
-      <Col lg="4">
-        <Pic
-        title={"Highlights"}
-        description={desc}
-        bgColorValue={'#C41230'}
-        img={usCapitolBuilding}
-        link={'/highlights'} />
       </Col>
     </Row>
   </div>

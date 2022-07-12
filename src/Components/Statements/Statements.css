@@ -10,7 +10,13 @@
 }
 
 .color-card {
-    height: 18rem;
+    height: 15rem;
     padding: 2rem 0 0 0;
     color: #fff;
+}
+
+@media (max-width: 768px) {
+    .statementsWrapper {
+        padding: 2rem 2rem;
+    }
 }

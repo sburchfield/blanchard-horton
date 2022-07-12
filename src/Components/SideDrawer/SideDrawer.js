@@ -19,7 +19,6 @@ const sideDrawer = props => {
       <li><Link onClick={props.click} to="/services">Services</Link></li>
       <li><Link onClick={props.click} to="/our-team">Our Team</Link></li>
       <li><Link onClick={props.click} to="/contact">Contact</Link></li>
-      <li><Link onClick={props.click} to="/highlights">Highlights</Link></li>
       </ul>
     </nav>
   )
