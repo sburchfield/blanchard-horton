@@ -36,7 +36,6 @@ class App extends Component {
     };
 
   render(){
-
     let backdrop
 
     if(this.state.sideDrawerOpen){
