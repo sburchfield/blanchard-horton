@@ -8,9 +8,6 @@ import './Toolbar.css';
 const toolbar = props => (
   <section className="toolbar background-white">
     <nav className="toolbar_nav" id="toolbar_nav">
-    <div>
-      <DrawerToggleButton click={props.drawerClickHandler} />
-    </div>
     <div className="logo_wrapper">
         <Link to="/"><div className="logo"></div></Link>
     </div>
@@ -21,12 +18,14 @@ const toolbar = props => (
       <li><Link to="/about">About</Link></li>
       <li><Link to="/services">Services</Link></li>
       <li><Link to="/our-team">Our Team</Link></li>
-      <li><Link to="/highlights">Highlights</Link></li>
       <li><Link to="/contact">Contact</Link></li>
       <li className="socialIcons"><a href="https://facebook.co" target="_blank" rel="noopener noreferrer" title="Facebook Account"><FaFacebook /></a></li>
       <li className="socialIcons"><a href="https://instagram.co" target="_blank" rel="noopener noreferrer" title="Linkedin Account"><FaLinkedin /></a></li>
       <li className="socialIcons"><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" title="Twitter Account"><FaTwitterSquare /></a></li>
     </ul>
+    </div>
+    <div>
+      <DrawerToggleButton click={props.drawerClickHandler} />
     </div>
     </nav>
   </section>

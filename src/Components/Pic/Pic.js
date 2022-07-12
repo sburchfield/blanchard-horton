@@ -19,7 +19,7 @@ function Pic (props){
   let linkColorValue = 'white';
 
   const [image] = useState(props.img)
-  const [headerStyle, setHeaderStyle] = useState({padding: '0.75em 0 1em 0'})
+  const [headerStyle, setHeaderStyle] = useState({padding: '1.5rem 0'})
   const [infoBgStyle, setInfoBgStyle] = useState({top: '70%', backgroundColor: props.bgColorValue, color: fontColorValue})
 
   let visitLink
@@ -29,12 +29,12 @@ function Pic (props){
   }
 
   const mouseEnterHandler = () => {
-    setHeaderStyle({padding: '0.75em 0 0.25em 0'})
+    setHeaderStyle({padding: '0.75rem 0 0.25rem 0'})
     setInfoBgStyle({top: '0', backgroundColor: props.bgColorValue, color: fontColorValue})
   }
 
   const mouseLeaveHandler = () => {
-    setHeaderStyle({padding: '0.75em 0 1em 0'})
+    setHeaderStyle({padding: '1.5rem 0'})
     setInfoBgStyle({top: '70%', backgroundColor: props.bgColorValue, color: fontColorValue})
   }
 

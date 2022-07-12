@@ -2,7 +2,7 @@ footer {
     padding: 3em 0;
 }
 
-footer a,
+footer li a,
 footer h6 {
     font-weight: 100;
 }
@@ -12,7 +12,13 @@ footer section {
     display: inline-block;
 }
 
-footer a {
+footer li a {
     color: #fff;
     padding: 0 1em;
+    text-decoration: none !important;
+}
+
+footer li a:hover {
+    color: #9FA1A4;
+    text-decoration: underline !important;
 }

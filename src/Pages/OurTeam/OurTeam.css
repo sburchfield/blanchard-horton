@@ -1,0 +1,9 @@
+.our-team-section-wrapper {
+    padding: 0 6rem;
+}
+
+@media (max-width: 820px) {
+    .our-team-section-wrapper {
+        padding: 0 0.5rem;
+    }
+}

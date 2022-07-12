@@ -1,7 +1,8 @@
 import Map from '../../Components/Map/Map'
 
-
 import background from '../../images/4.jpg';
+
+import './Contact.css'
 
 const contact = () => { 
 
@@ -14,23 +15,24 @@ const contact = () => {
                 </div>
             </div>
             <div className="row align-items-center">
-                <div className="col-6">
-                    <div style={{"borderRadius": "0.6rem", "padding" : "3rem"}}>
+                <div className="col-12 col-lg-6 order-2 order-lg-1">
+                    <div className="map-wrapper">
                     <Map 
                     isMarkerShown 
-                    googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
+                    googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyAPsRXVNyIfGyoIsW5X9b4Td2FNMEmaves"
                     loadingElement={<div style={{ height: `100%` }} />}
                     containerElement={<div style={{ height: `400px` }} />}
                     mapElement={<div style={{ height: `100%` }} />}
                     />
                     </div>
                 </div>
-                <div className="col-6">
-                    <div className="text-center" style={{padding: '4rem 0'}}>
+                <div className="col-12 col-lg-6 order-1 order-lg-2">
+                    <div className="text-center" style={{padding: '4rem 3rem'}}>
                         <h3>Contact Us!</h3>
-                        <p>If you would like to work with us or have us file a patten on your behalf.</p>
+                        <p>If you would like to work with us or have us file a patent, trademark, or copyright application on your behalf.</p>
                         <p>Please contact us by calling this number.</p>
-                        <h5>(865) 269-2673</h5>
+                        <h5 id="desktop-phone">(865) 269-2673</h5>
+                        <h5 id="mobile-phone"><a href="tel:865-269-2673">(865) 269-2673</a></h5>
                     </div>
                 </div>
             </div>
