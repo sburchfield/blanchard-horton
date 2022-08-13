@@ -8,11 +8,11 @@ const footer = () => (
 	<h4>Blanchard Horton PLLC</h4>
 	<h5>(865) 269-2673</h5>
 	<ul className="nav justify-content-center">
-		<li style={{padding: '0 1rem'}}><Link to="/">Home</Link></li>
-		<li style={{padding: '0 1rem'}}><Link to="/about">About</Link></li>
-		<li style={{padding: '0 1rem'}}><Link to="/services">Services</Link></li>
-		<li style={{padding: '0 1rem'}}><Link to="/our-team">Our Team</Link></li>
-		<li style={{padding: '0 1rem'}}><Link to="/contact">Contact</Link></li>
+		<li><Link to="/">Home</Link></li>
+		<li><Link to="/about">About</Link></li>
+		<li><Link to="/services">Services</Link></li>
+		<li><Link to="/our-team">Our Team</Link></li>
+		<li><Link to="/contact">Contact</Link></li>
 	</ul>
 	<Row className="justify-content-center" style={{marginTop: '2rem'}}>
 	<Col lg="3">
