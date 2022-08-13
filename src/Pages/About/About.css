@@ -4,7 +4,8 @@
 
 .about-wrapper p {
     text-indent: 2rem;
-    padding: 0 2rem;
+    padding: 0 1.75rem;
+    text-align: justify;
 }
 
 .card-images {

@@ -10,7 +10,7 @@ import './OurTeam.css';
 const ourTeam = () => { 
 
     return(
-        <div style={{paddingTop: '5.5rem', paddingBottom: '2rem'}}>
+        <div id="ourTeam" style={{paddingTop: '5.5rem', paddingBottom: '2rem'}}>
             <div className="inner-header-wrapper white text-center" style={{backgroundImage: `url( ${background})`}}>
                 <div className="filter row justify-content-center align-content-center">
                     <h1>Our Team</h1>
@@ -26,12 +26,12 @@ const ourTeam = () => {
                 <h4 className="aboutSectionHeader">DR. JONATHAN M. BLANCHARD, Ph.D.</h4>
                 <div>
                     <div>
-                        <div style={{padding: '0 1rem 1rem 1rem'}}>
-                            <div className="text-left">
+                        <div className="aboutSectionText">
+                            <div>
                                 <p>Dr. Blanchard is a shareholder at Blanchard Horton PLLC. Jonathan provides legal services in the area of intellectual property law, including patents, trademarks, copyrights, trade secrets, and product designs. Jonathan specializes in patent portfolio management and engages in enforcement actions to protect the current and future business opportunities of clients. He has developed patent portfolios that were licensed to settle multi-million-dollar litigation between international corporations and to exclude competitors from markets.</p>
                                 <p>For more than fifteen years, Jonathan has successfully converted complex technology assets into valuable U.S. and international property rights for clients, effectively prosecuted complex reissue and reexamination applications, and diligently pursued appeals to the Patent Trial and Appeal Board and the Federal Circuit. He provides due diligence evaluations and opinions regarding the strength, validity, and value of existing patent rights, including opinions in the context of Hatch-Waxman litigation, and has extensive experience with the development, implementation, and defense of design-around strategies.</p>
                                 <p>Jonathan has substantial experience with organic and inorganic chemistry as well as with the electrical and mechanical arts. Specific technologies include:</p>
-                                <ul>
+                                <ul className="experience">
                                     <li><b>Chemistry:</b> Analytic blood analyte sensors using electrochemical, optical or colorimetric detection with chemical or biological analysis; Trace metal HPLC and other water-based analytic techniques; Pharmaceutical AI’s, formulations, and drug delivery systems; Separation Technologies including enantiomers; Small-molecule catalysts; Phase modifiers including dispersants, emulsions, suspensions, and surfactants; Ore extraction and processing.</li>
                                     <li><b>Materials:</b> Reactive surfaces including electrodes, batteries, and substrate attached catalysts; Polymers including conductive, oxygen excluding, non-linear optic, and Bone replacement; Coatings; Fibers; Semi-conductive materials including thermoelectrics; Nanoscale materials; OLED materials.</li>
                                     <li><b>Electrical:</b> Processing and compensation of analyte responsive output signals; Sound processing; Adaptive noise cancellation; Acoustical drivers.</li>
@@ -93,11 +93,11 @@ const ourTeam = () => {
                 <h4 className="aboutSectionHeader">JACOB G. HORTON</h4>
                 <div>
                     <div>
-                        <div style={{padding: '0 1rem 1rem 1rem'}}>
-                            <div className="text-left">
+                        <div className="aboutSectionText">
+                            <div>
                                 <p>Mr. Horton is a shareholder in the law firm of Blanchard Horton PLLC and practices in all areas of intellectual property law, including patents, trademarks, copyrights, trade dress, and trade secrets.  Jake’s practice includes intellectual property procurement, as well as licensing and acquisition of intellectual property rights, and intellectual property enforcement and litigation. Jake has developed and managed large brand portfolios for several international companies and has represented clients in numerous federal lawsuits involving complex intellectual property issues and parties in diverse jurisdictions.</p>
                                 <p>Jake has substantial experience in trademark law, asset purchase agreements involving large intellectual property holdings, intellectual property litigation and enforcement, and patent prosecution in the mechanical and materials science fields. Specific technologies include:</p>
-                                <ul>
+                                <ul className="experience">
                                     <li><b>Mechanical:</b> Complex mechanical devices including heavy machinery; Vehicles and automotive devices; Machine tools and systems; Firearms and firearm accessories; Complex manufacturing machines and systems.</li>
                                     <li><b>Materials Science:</b> Ballistic materials including transparent armor, sintered ceramics, and compound projectiles; Semi-conductive materials including photovoltaic materials and thermoelectrics; Nanoscale materials; Concrete and composite materials for large structures.</li>
                                     <li><b>Methods:</b> Business methods in the fields of agriculture, land development, finance, data acquisition, and marketing; Manufacturing methods involving complex assemblies of components and complex chemical systems.</li>
