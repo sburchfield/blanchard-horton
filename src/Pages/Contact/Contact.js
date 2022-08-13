@@ -1,6 +1,6 @@
 import Map from '../../Components/Map/Map'
 
-import background from '../../images/4.jpg';
+import background from '../../images/cards.jpg';
 
 import './Contact.css'
 

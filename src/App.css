@@ -61,6 +61,10 @@
     display: block;
 }
 
+.text-left {
+    text-align: left !important;
+}
+
 @media (min-width: 768px) {
     #desktop-phone {
         display: block;

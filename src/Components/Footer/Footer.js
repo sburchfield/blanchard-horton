@@ -21,7 +21,7 @@ const footer = () => (
 		<h6>Oak Ridge, TN 37831</h6>
 	</Col>
 	<Col lg="3">
-		<h5 style={{fontWeight: "bold", textDecoration: "underline"}}>Address</h5>
+		<h5 style={{fontWeight: "bold", textDecoration: "underline"}}>Location</h5>
 		<h6>40 New York Avenue Suite 300</h6>
 		<h6>Oak Ridge, TN 37831</h6>
 	</Col>

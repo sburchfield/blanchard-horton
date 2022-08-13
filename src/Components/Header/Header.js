@@ -13,7 +13,6 @@ const scrollWithOffset = (el, offset) => {
   });
 }
 
-
 class Header extends Component {
 
   render(){

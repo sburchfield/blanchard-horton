@@ -3,11 +3,12 @@ import {Row, Col} from 'reactstrap'
 
 import Pic from '../Pic/Pic'
 
-import monument from '../../images/1.jpg'
-import fireworks from '../../images/2.jpg'
-import tower from '../../images/3.jpg'
-import greatSmokeyMountains from '../../images/4.jpg'
-import usCapitolBuilding from '../../images/5.jpg'
+import cards from '../../images/cards.jpg'
+import circuits from '../../images/circuits.jpg'
+import scales from '../../images/scales.jpg'
+import tubes from '../../images/tubes.jpg'
+import barometer from '../../images/barometer.jpg'
+import book from '../../images/book.jpg'
 
 import './Issues.css'
 
@@ -23,7 +24,7 @@ class Issues extends Component {
 
 
   componentDidMount() {
-    let imageList = [monument, fireworks, tower, greatSmokeyMountains, usCapitolBuilding]
+    let imageList = [cards, circuits, scales, tubes, barometer, book]
     imageList.forEach((image) => {
       new Image().src = image
     });
@@ -39,7 +40,7 @@ return(
           title={"About"}
           description={desc}
           bgColorValue={'#C41230'}
-          img={monument}
+          img={tubes}
           link={'/about'} />
       </Col>
       <Col lg="6" className="order-2 order-lg-2">
@@ -47,7 +48,7 @@ return(
         title={"Services"}
         description={desc}
         bgColorValue={'#9FA1A4'}
-        img={fireworks}
+        img={barometer}
         link={'/services'} />
       </Col>
       <Col lg="6" className="order-4 order-lg-3">
@@ -55,7 +56,7 @@ return(
         title={"Our Team"}
         description={desc}
         bgColorValue={'#9FA1A4'}
-        img={tower}
+        img={scales}
         link={'/our-team'} />
       </Col>
       <Col lg="6" className="order-3 order-lg-4">
@@ -63,7 +64,7 @@ return(
       title={"Contact"}
       description={desc}
       bgColorValue={'#C41230'}
-      img={greatSmokeyMountains}
+      img={cards}
       link={'/contact'} />
       </Col>
     </Row>

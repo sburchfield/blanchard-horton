@@ -7,7 +7,7 @@ import './OurTeamSection.css';
 const ourTeamSection = (props) => {
 
   return (
-    <div className="col-12 col-md-6">
+    <div className="col-12 col-lg-6">
     <div className="aboutSectionWrapper card">
       <h4 className="aboutSectionHeader">{props.firstName} {props.lastName}</h4>
       <div>

@@ -1,4 +1,6 @@
-import background from '../../images/1.jpg';
+import background from '../../images/tubes.jpg';
+import gavel from '../../images/gavel.jpg';
+import book from '../../images/book.jpg';
 
 import './About.css'
 
@@ -15,7 +17,7 @@ const about = () => {
             <div className="container about-wrapper">
             <div className="row align-items-center" style={{padding: '1rem 0'}}>
                 <div className="col-12 col-lg-5">
-                    <div className="card-images" style={{backgroundImage: `url(${background})`}}></div>
+                    <div className="card-images" style={{backgroundImage: `url(${gavel})`}}></div>
                 </div>
                 <div className="col-12 col-lg-7">
                 <h3 className="text-center">Our Firm</h3>
@@ -29,7 +31,7 @@ const about = () => {
                 <p>Blanchard Horton PLLC began in 2021 when Dr. Jonathan M. Blanchard and Mr. Jacob G. Horton, who had practiced together at a firm in Knoxville, Tennessee, opened a new boutique intellectual property law firm in Oak Ridge, Tennessee.  Blanchard Horton PLLC provides the highest quality of intellectual property representation to our clients throughout the United States and internationally, including within the Oak Ridge technology corridor and throughout the greater East Tennessee area.  From individual inventors, to startup companies, to large corporate entities, our clients rely on us to assist them with all of their intellectual property needs.</p>
                 </div>
                 <div className="col-12 col-lg-5 order-1 order-lg-2">
-                    <div className="card-images" style={{backgroundImage: `url(${background})`}}></div>
+                    <div className="card-images" style={{backgroundImage: `url(${book})`}}></div>
                 </div>
             </div>
             </div>
