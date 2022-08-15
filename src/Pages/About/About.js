@@ -11,7 +11,7 @@ const about = () => {
             <div className="inner-header-wrapper white text-center" style={{backgroundImage: `url( ${background})`}}>
                 <div className="filter row justify-content-center align-content-center">
                     <h1>About</h1>
-                    <h6>Excepteur, Officia, & Laborum.</h6>
+                    <h6>Value in Protection.</h6>
                 </div>
             </div>
             <div className="container about-wrapper">

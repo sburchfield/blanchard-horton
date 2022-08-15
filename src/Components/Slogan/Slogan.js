@@ -8,13 +8,13 @@ class Slogan extends Component {
 
   render(){
     return (
-    <div className="sloganWrapper white text-center">
-      <h2>Blanchard Horton PLLC</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.</p>
+    <div style={{backgroundColor: '#f5f5ef', padding: '1rem 0'}}>
+      <div className="sloganWrapper white text-center">
+        <h2>Blanchard Horton PLLC</h2>
+        <p>
+          Collectively, our attorneys have over 40 years of experience preparing, obtaining, and evaluating foreign and domestic patents and trademark registrations, managing intellectual property portfolios, licensing and negotiating asset purchases of intellectual property rights, and litigating complex patent, trademark, unfair competition, and false advertising disputes.  Find out how we can help you unlock the full potential of your technology assets, to create new business opportunities, to protect existing markets, and to achieve value for your company or organization.
+        </p>
+      </div>
     </div>
     );
   }

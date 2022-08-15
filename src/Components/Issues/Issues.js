@@ -18,7 +18,10 @@ import './Issues.css'
 // let greatDes = "Climate change is real. We need to accept that as a nation and use that information to benefit us. Taxing fossil fuel industries and creating jobs and wealth from alternative energy sources will help every American."
 // let capitolDes = "Washington is as murky as ever since the 2016 election. We need a new era of transparency and accountability in D.C. and our current administration is not a part of that."
 
-const desc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+const aboutDesc = "Blanchard Horton PLLC provides expertise in all areas of intellectual property practice, including patents, trademarks, copyrights, trade dress, and trade secrets.";
+const servicesDesc = "Patents, Trademarks, Copyrights, Trade Dress, and Trade Secrets.";
+const ourTeanDesc = "Meet our team of dedicated attorneys.";
+const contactDesc = "Find out how to get in touch with us.";
 
 class Issues extends Component {
 
@@ -38,7 +41,7 @@ return(
       <Col lg="6" className="order-1 order-lg-1">
         <Pic
           title={"About"}
-          description={desc}
+          description={aboutDesc}
           bgColorValue={'#C41230'}
           img={tubes}
           link={'/about'} />
@@ -46,7 +49,7 @@ return(
       <Col lg="6" className="order-2 order-lg-2">
         <Pic
         title={"Services"}
-        description={desc}
+        description={servicesDesc}
         bgColorValue={'#9FA1A4'}
         img={barometer}
         link={'/services'} />
@@ -54,7 +57,7 @@ return(
       <Col lg="6" className="order-4 order-lg-3">
         <Pic
         title={"Our Team"}
-        description={desc}
+        description={ourTeanDesc}
         bgColorValue={'#9FA1A4'}
         img={scales}
         link={'/our-team'} />
@@ -62,7 +65,7 @@ return(
       <Col lg="6" className="order-3 order-lg-4">
       <Pic
       title={"Contact"}
-      description={desc}
+      description={contactDesc}
       bgColorValue={'#C41230'}
       img={cards}
       link={'/contact'} />

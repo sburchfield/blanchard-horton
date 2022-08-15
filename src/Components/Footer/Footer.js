@@ -16,7 +16,7 @@ const footer = () => (
 	</ul>
 	<Row className="justify-content-center" style={{marginTop: '2rem'}}>
 	<Col lg="3">
-		<h5 style={{fontWeight: "bold", textDecoration: "underline"}}>P.O. Box</h5>
+		<h5 style={{fontWeight: "bold", textDecoration: "underline"}}>Mailing Address</h5>
 		<h6>P.O. Box 5657</h6>
 		<h6>Oak Ridge, TN 37831</h6>
 	</Col>
