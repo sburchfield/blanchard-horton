@@ -25,7 +25,7 @@ return(
       <div className="inner-header-wrapper white text-center" style={{backgroundImage: `url( ${background})`}}>
           <div className="filter row justify-content-center align-content-center">
               <h1>Services</h1>
-              <h6>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h6>
+              <h6>Exceptional Service in Intellectual Property.</h6>
           </div>
       </div>
       <div className="ani-card-container">

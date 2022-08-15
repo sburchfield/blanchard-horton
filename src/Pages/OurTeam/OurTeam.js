@@ -14,7 +14,7 @@ const ourTeam = () => {
             <div className="inner-header-wrapper white text-center" style={{backgroundImage: `url( ${background})`}}>
                 <div className="filter row justify-content-center align-content-center">
                     <h1>Our Team</h1>
-                    <h6>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h6>
+                    <h6>Over 40 years of combined experience in intellectual property law.</h6>
                 </div>
             </div>
             <Row className="justify-content-center our-team-section-wrapper">

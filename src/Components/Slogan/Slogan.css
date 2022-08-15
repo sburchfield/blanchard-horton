@@ -1,7 +1,11 @@
 .sloganWrapper {
     height: 16em;
-    padding-top: 3em;
-    background-image: linear-gradient(#C41230, #9FA1A4);
+    padding-top: 2em;
+    /* background-image: linear-gradient(#C41230, #9FA1A4); */
+    background-color: #f5f5ef;
+    color: #C41230;
+    border-top: #C41230 8px double;
+    border-bottom: #C41230 8px double;
 }
 
 .sloganWrapper p {
