@@ -25,7 +25,7 @@ function Pic (props){
   let visitLink
 
   if(props.link){
-    visitLink = <Link smooth to={props.link} custom="Healthcare" className={linkColorValue} scroll={el => scrollWithOffset(el, 175)}>More...</Link>
+    visitLink = <Link smooth="true" to={props.link} custom="Healthcare" className={linkColorValue} scroll={el => scrollWithOffset(el, 175)}>More...</Link>
   }
 
   const mouseEnterHandler = () => {
