@@ -19,16 +19,16 @@ class Header extends Component {
     return(
       <div>
         <header>
-          <div class="filter">
-            <div class="row headerWrapper justify-content-center align-items-center">
-              <div class="col-6">
-                <div class="text-center">
-                    <div class="header-logo"></div>
+          <div className="filter">
+            <div className="row headerWrapper justify-content-center align-items-center">
+              <div className="col-6">
+                <div className="text-center">
+                    <div className="header-logo"></div>
                     <h3>(865) 269-2673</h3>
                     <h4>P.O. Box 5657 Oak Ridge, TN 37831</h4>
-                    <div class="scroll-link icon">
+                    <div className="scroll-link icon">
                     <HashLink 
-                      smooth 
+                      smooth="true" 
                       to="#more"
                       scroll={el => scrollWithOffset(el, 85)}
                       ><FaChevronCircleDown /></HashLink>

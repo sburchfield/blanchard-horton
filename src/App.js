@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import { Route, BrowserRouter, Switch} from 'react-router-dom'
-import './App.css';
+
+import ReactGA from 'react-ga';
+
+import RouteChangeTracker from './Components/RouteChangeTracker/RouteChangeTracker'
 
 import Home from './Pages/Home/Home'
 import About from './Pages/About/About'
@@ -14,9 +17,15 @@ import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
 import Toolbar from './Components/Toolbar/Toolbar'
 import Footer from './Components/Footer/Footer'
 
+import './App.css';
+
+const TRACKING_ID = "UA-238309252-1"; // OUR_TRACKING_ID
+
+ReactGA.initialize(TRACKING_ID);
+
 class App extends Component {
 
-  constructor(props){
+constructor(props){
    super(props)
    this.state = {
      sideDrawerOpen: false,
@@ -45,6 +54,7 @@ class App extends Component {
     return (
       <div className="App">
         <BrowserRouter>
+        <RouteChangeTracker />
         <Toolbar drawerClickHandler={this.drawerToggleClickHandler}/>
         <SideDrawer show={this.state.sideDrawerOpen} click={this.drawerToggleClickHandler}/>
         {backdrop}
