@@ -1,5 +1,5 @@
 header {
-    background-image: url(../../images/law-man.jpg);
+    background-image: url(../../images/banner_bell.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,7 +23,7 @@ header {
     height: 3rem;
     width: 3rem;
     display: inline-block;
-    margin-top: 8rem;
+    margin-top: 7rem;
     text-decoration: none;
 }
 
