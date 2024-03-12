@@ -17,13 +17,7 @@ const contact = () => {
             <div className="row align-items-center">
                 <div className="col-12 col-lg-6 order-2 order-lg-1">
                     <div className="map-wrapper">
-                    <Map 
-                    isMarkerShown 
-                    googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyAPsRXVNyIfGyoIsW5X9b4Td2FNMEmaves"
-                    loadingElement={<div style={{ height: `100%` }} />}
-                    containerElement={<div style={{ height: `400px` }} />}
-                    mapElement={<div style={{ height: `100%` }} />}
-                    />
+                    <Map />
                     </div>
                 </div>
                 <div className="col-12 col-lg-6 order-1 order-lg-2">
