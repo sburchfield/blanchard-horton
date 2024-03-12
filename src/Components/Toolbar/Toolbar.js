@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaFacebook } from "react-icons/fa";
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton'
 import { Link } from 'react-router-dom';
 
@@ -19,7 +19,7 @@ const toolbar = props => (
       <li><Link to="/services">Services</Link></li>
       <li><Link to="/our-team">Our Team</Link></li>
       <li><Link to="/contact">Contact</Link></li>
-      {/* <li className="socialIcons"><a href="https://facebook.co" target="_blank" rel="noopener noreferrer" title="Facebook Account"><FaFacebook /></a></li> */}
+      <li className="socialIcons"><a href="https://www.facebook.com/profile.php?id=61557327835382" target="_blank" rel="noopener noreferrer" title="Facebook Account"><FaFacebook /></a></li> 
       <li className="socialIcons"><a href="https://www.linkedin.com/company/79008216/" target="_blank" rel="noopener noreferrer" title="Linkedin Account"><FaLinkedin /></a></li>
       {/* <li className="socialIcons"><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" title="Twitter Account"><FaTwitterSquare /></a></li> */}
     </ul>
