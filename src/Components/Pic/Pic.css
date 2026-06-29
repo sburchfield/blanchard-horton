@@ -1,17 +1,48 @@
 .galleryImage {
-    /* width: 28rem; */
-    height: 15rem;
-    border-radius: 12px;
+    align-items: flex-end;
+    display: flex;
+    min-height: 18rem;
+    border-radius: 8px;
     padding: 0;
     margin: 1em auto;
-    box-shadow: 5px 3px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 18px 45px rgba(25, 36, 51, 0.12);
     background-color: #000;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    -webkit-transition: background-image 750ms;
-    transition: background-image 750ms;
+    color: #fff;
     overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.galleryImage::before {
+    background: #a50f2d;
+    content: "";
+    inset: 0;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 220ms ease;
+    z-index: 0;
+}
+
+.galleryImage:hover,
+.galleryImage:focus {
+    color: #fff;
+    box-shadow: 0 22px 55px rgba(25, 36, 51, 0.18);
+    outline: none;
+    transform: translateY(-3px);
+}
+
+.galleryImage:hover::before,
+.galleryImage:focus::before {
+    opacity: 0.94;
+}
+
+.galleryImage:focus-visible {
+    outline: 3px solid rgba(165, 15, 45, 0.34);
+    outline-offset: 4px;
 }
 
 .infoBackground {
@@ -21,30 +52,37 @@
     margin-bottom: 0;
     margin-right: auto;
     margin-left: auto;
-    text-align: center;
-    transition: top 750ms ease-out;
-    height: 100%;
+    text-align: left;
+    padding: 2rem;
+    min-height: 12.5rem;
+    transition: transform 220ms ease;
+    z-index: 1;
+}
+
+.galleryImage:hover .infoBackground,
+.galleryImage:focus .infoBackground {
+    transform: translateY(-0.35rem);
 }
 
 .infoBackground h3 {
-    margin: 0;
-    transition: padding 750ms ease-out;
+    font-size: clamp(1.55rem, 3vw, 2rem);
+    margin: 0 0 0.65rem;
 }
 
 .infoBackground p {
-    width: 80%;
-    margin: 0 auto 0.75em auto;
-    font-size: 0.975em;
+    color: rgba(255, 255, 255, 0.88);
+    margin: 0 0 1rem;
+    font-size: 1rem;
+    line-height: 1.55;
+    max-width: 32rem;
 }
 
-.infoBackground a {
-    /* color: #fff; */
+.infoBackground span {
+    color: #fff;
     font-weight: bold;
-    font-size: 1em;
-}
-
-.infoBackground a:hover {
-    /* color: blue; */
+    font-size: 0.98rem;
+    text-decoration: underline;
+    text-underline-offset: 0.22rem;
 }
 
 @media (max-width: 1024px) {
@@ -54,8 +92,16 @@
 }
 
 @media (max-width: 600px) {
+    .galleryImage {
+        min-height: 17rem;
+        margin: 0.75rem auto;
+    }
+    .infoBackground {
+        min-height: auto;
+        padding: 1.35rem;
+    }
     .infoBackground p {
-        font-size: 0.8em;
+        font-size: 0.95rem;
     }
 }
 

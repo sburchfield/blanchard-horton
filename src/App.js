@@ -21,7 +21,9 @@ import './App.css';
 
 const TRACKING_ID = "UA-238309252-1"; // OUR_TRACKING_ID
 
-ReactGA.initialize(TRACKING_ID);
+if (process.env.NODE_ENV !== 'test') {
+  ReactGA.initialize(TRACKING_ID);
+}
 
 class App extends Component {
 

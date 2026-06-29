@@ -1,30 +1,37 @@
-.card {
+.service-card.card {
+    border: 0;
+    border-radius: 8px;
+    height: 100%;
+    overflow: hidden;
     transform-style: preserve-3d;
-    margin: 0.5em 0;
-    box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.1);
-    /* box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2); */
-    text-align: center;
+    margin: 0.75em 0;
+    box-shadow: 0 16px 36px rgba(25, 36, 51, 0.11);
+    text-align: left;
 }
 
 .services-background {
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .icon-section {
-    padding: 2rem 0;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 17rem;
+    padding: 1.5rem;
 }
 
 .circle-icon {
-    /* background: #C41230; */
     color: #f5f5ef;
-    width: 70%;
-    height: 70%;
-    /* border-radius: 50%; */
+    width: 4.25rem;
+    height: 4.25rem;
     text-align: center;
-    /* line-height: 12rem; */
     vertical-align: middle;
-    padding: 1rem 3rem;
+    padding: 0;
+    margin-bottom: 1rem;
 }
 
 .card-title,
@@ -35,4 +42,32 @@
 
 .card-text {
     font-size: 0.9em;
+    line-height: 1.55;
+}
+
+.service-card .card-body {
+    padding: 0;
+}
+
+.service-card .card-title {
+    font-size: 1.45rem;
+    margin-bottom: 0.45rem;
+}
+
+.service-card .list-group-item {
+    border-color: rgba(31, 40, 57, 0.1);
+    color: #374151;
+    font-size: 0.86rem;
+    line-height: 1.4;
+    padding: 0.72rem 1rem;
+}
+
+.service-card .list-group-item span {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .icon-section {
+        min-height: 14rem;
+    }
 }

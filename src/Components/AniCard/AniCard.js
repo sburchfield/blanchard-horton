@@ -8,7 +8,7 @@ function AniCard(props) {
 
   return(
     <div className="col-12 col-md-6 col-lg-3">
-      <div className="card">
+      <div className="service-card card">
         <div className="background-grey services-background" style={{backgroundImage: `url( ${props.background})`}}>
             <div className="icon-section filter">
               {props.icon}
@@ -22,7 +22,7 @@ function AniCard(props) {
           {
             props.li.map( (item, s) => {
               return(
-                <li key={"li" + s} className="list-group-item" style={{fontSize: '0.8rem'}}><span>{item}</span></li>
+                <li key={"li" + s} className="list-group-item"><span>{item}</span></li>
               )
             })
           }

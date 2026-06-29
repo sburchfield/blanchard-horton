@@ -4,14 +4,49 @@
 }
 
 #experiencesInner h2 {
-    letter-spacing: .05em;
+    letter-spacing: 0;
     font-size: 3.2em;
     font-weight: bold;
     padding-top: 0.5em;
 }
 
+.services-intro {
+    padding-bottom: 1rem;
+}
+
 .ani-card-container {
-    padding: 2rem 4rem;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 1rem 2rem 4rem;
+}
+
+.service-cta {
+    align-items: center;
+    background: #1f2839;
+    color: #fff;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+    padding: 3rem max(1.5rem, calc((100vw - 1180px) / 2));
+}
+
+.service-cta h2 {
+    font-size: clamp(1.65rem, 3vw, 2.35rem);
+    line-height: 1.2;
+    margin: 0;
+    max-width: 42rem;
+}
+
+.service-cta .section-kicker {
+    color: #d9c391;
+}
+
+.service-cta-link {
+    color: #fff;
+    font-weight: 800;
+    text-decoration: underline;
+    text-underline-offset: 0.24rem;
+    white-space: nowrap;
 }
 
 @media (max-width: 786px) {
@@ -19,6 +54,15 @@
         padding: 0;
     }
     .ani-card-container {
-        padding: 2rem 0;
+        padding: 1rem 1rem 3rem;
+    }
+    .service-cta {
+        align-items: stretch;
+        flex-direction: column;
+        padding: 2.5rem 1rem;
+    }
+    .service-cta-link {
+        text-align: center;
+        white-space: normal;
     }
 }

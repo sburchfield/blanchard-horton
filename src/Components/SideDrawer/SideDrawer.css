@@ -1,7 +1,7 @@
 .sideDrawer{
   height: 100%;
-  background: #fff;
-  box-shadow: 1px 0px 7px rgba(0,0,0,0.5);
+  background: #fbfaf6;
+  box-shadow: 1px 0px 25px rgba(25, 36, 51, 0.24);
   position: fixed;
   top: 0;
   left: 0;
@@ -22,6 +22,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 2rem;
 }
 
 .sideDrawer li{
@@ -29,13 +30,40 @@
 }
 
 .sideDrawer a{
-  color: rgba(0, 0, 0, 1);
+  color: #192433;
   text-decoration: none;
   font-size: 1.2em;
+  font-weight: 700;
 }
 
 .sideDrawer a:hover, .sideDrawer a:active {
-  color: rgba(0,0,0,0.5);
+  color: #a50f2d;
+}
+
+.sideDrawer .drawer-phone {
+  align-items: center;
+  background: #a50f2d;
+  border-radius: 6px;
+  color: #fff;
+  display: inline-flex;
+  gap: 0.45rem;
+  margin-top: 1rem;
+  padding: 0.8rem 1rem;
+}
+
+.sideDrawer .drawer-phone:hover {
+  color: #fff;
+  background: #870b24;
+}
+
+.drawer-social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.drawer-social a {
+  font-size: 1.5rem;
 }
 
 @media (min-width: 769px){

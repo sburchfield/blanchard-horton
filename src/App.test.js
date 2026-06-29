@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders the firm homepage', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  expect(screen.getAllByText(/Blanchard Horton PLLC/i).length).toBeGreaterThan(0);
+  expect(screen.getByText(/Strategic protection for inventions/i)).toBeInTheDocument();
 });

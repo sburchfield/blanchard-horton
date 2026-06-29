@@ -10,13 +10,18 @@ import './OurTeam.css';
 const ourTeam = () => { 
 
     return(
-        <div id="ourTeam" style={{paddingTop: '5.5rem', paddingBottom: '2rem'}}>
+        <div id="ourTeam" className="page-offset">
             <div className="inner-header-wrapper white text-center" style={{backgroundImage: `url( ${background})`}}>
                 <div className="filter row justify-content-center align-content-center">
                     <h1>Our Team</h1>
                     <h6>Over 40 years of combined experience in intellectual property law.</h6>
                 </div>
             </div>
+            <section className="section-shell team-intro">
+                <p className="section-kicker">Attorneys</p>
+                <h2 className="section-title">Experienced IP counsel for technical and brand-focused matters.</h2>
+                <p className="section-lede">The firm's attorneys bring scientific, engineering, prosecution, licensing, and litigation experience to patent, trademark, copyright, trade secret, and technology asset matters.</p>
+            </section>
             <Row className="justify-content-center our-team-section-wrapper">
             <div className="col-12 col-lg-6">
                 <div className="aboutSectionWrapper card">

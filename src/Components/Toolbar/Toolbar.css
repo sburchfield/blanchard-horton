@@ -10,9 +10,10 @@
 .toolbar {
     width: 100%;
     z-index: 300;
-    padding: 1rem 4rem;
+    padding: 0.85rem 4rem;
     position: fixed;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 12px 35px rgba(25, 36, 51, 0.12);
+    border-bottom: 1px solid rgba(31, 40, 57, 0.08);
 }
 
 .toolbar_nav {
@@ -35,10 +36,11 @@
     margin: 0;
     padding: 0;
     display: flex;
+    align-items: center;
 }
 
 .toolbar_nav_right li {
-    padding: 1rem 0.5rem;
+    padding: 0.5rem 0.45rem;
 }
 
 .socialIcons a {
@@ -48,17 +50,36 @@
 
 .toolbar_nav_right li a,
 .socialIcons a {
-    color: #000;
+    color: #192433;
+    font-weight: 600;
     text-decoration: none;
 }
 
 .toolbar_nav_right li a:hover {
-    text-decoration: underline;
+    color: #a50f2d;
+    text-decoration: none;
+}
+
+.toolbar-phone a {
+    align-items: center;
+    background: #a50f2d;
+    border-radius: 6px;
+    color: #fff !important;
+    display: inline-flex;
+    gap: 0.35rem;
+    padding: 0.7rem 0.85rem;
+}
+
+.toolbar-phone a:hover {
+    background: #870b24;
 }
 
 @media (max-width: 820px) {
     .toolbar {
         padding: 1rem 2rem;
+    }
+    .toolbar_nav_right li {
+        padding: 0.5rem 0.3rem;
     }
 }
 

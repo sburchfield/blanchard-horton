@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { FaChevronCircleDown } from 'react-icons/fa';
+import { FaChevronCircleDown, FaPhoneAlt } from 'react-icons/fa';
 import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 
 import './Header.css'
 
@@ -20,12 +21,30 @@ class Header extends Component {
       <div>
         <header>
           <div className="filter">
-            <div className="row headerWrapper justify-content-center align-items-center">
-              <div className="col-6">
-                <div className="text-center">
+            <div className="headerWrapper">
+              <div className="hero-copy">
                     <div className="header-logo"></div>
-                    <h3>(865) 269-2673</h3>
-                    <h4>P.O. Box 5657 Oak Ridge, TN 37831</h4>
+                    <p className="hero-kicker">Oak Ridge intellectual property attorneys</p>
+                    <h1>Strategic protection for inventions, brands, and technology assets.</h1>
+                    <p className="hero-lede">Blanchard Horton PLLC helps inventors, startups, and established companies secure, manage, and enforce intellectual property rights with business goals in view.</p>
+                    <div className="button-row hero-actions">
+                      <a className="button-primary" href="tel:865-269-2673"><FaPhoneAlt /> (865) 269-2673</a>
+                      <Link className="button-secondary" to="/services">Explore Services</Link>
+                    </div>
+                    <dl className="hero-proof">
+                      <div>
+                        <dt>40+</dt>
+                        <dd>years combined IP experience</dd>
+                      </div>
+                      <div>
+                        <dt>USPTO</dt>
+                        <dd>patent and trademark counsel</dd>
+                      </div>
+                      <div>
+                        <dt>TN</dt>
+                        <dd>serving clients nationwide</dd>
+                      </div>
+                    </dl>
                     <div className="scroll-link icon">
                     <HashLink 
                       smooth="true" 
@@ -33,7 +52,6 @@ class Header extends Component {
                       scroll={el => scrollWithOffset(el, 85)}
                       ><FaChevronCircleDown /></HashLink>
                     </div>
-                </div>
               </div>
             </div>
           </div>

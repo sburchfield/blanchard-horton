@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import AniCard from '../../Components/AniCard/AniCard'
 
@@ -21,13 +22,18 @@ const services = (props) => {
 
 
 return(
-    <div style={{paddingTop: '5.5rem'}}>
+    <div className="page-offset">
       <div className="inner-header-wrapper white text-center" style={{backgroundImage: `url( ${background})`}}>
           <div className="filter row justify-content-center align-content-center">
               <h1>Services</h1>
               <h6>Exceptional Service in Intellectual Property.</h6>
           </div>
       </div>
+      <section className="section-shell services-intro">
+        <p className="section-kicker">Practice areas</p>
+        <h2 className="section-title">Practical intellectual property counsel for complex technologies and valuable brands.</h2>
+        <p className="section-lede">Blanchard Horton PLLC supports clients across procurement, portfolio management, opinions, licensing, enforcement, and disputes. The goal is not just a filing; it is protection that makes sense in the context of the client's market, competitors, and technology roadmap.</p>
+      </section>
       <div className="ani-card-container">
       <div className="row justify-content-center">
         <AniCard
@@ -56,6 +62,16 @@ return(
           icon={<FaRegCopyright className="circle-icon" />}/>
       </div>
       </div>
+      <section className="service-cta">
+        <div>
+          <p className="section-kicker">Ready to discuss a matter?</p>
+          <h2>Talk with an IP attorney about your next step.</h2>
+        </div>
+        <div className="button-row">
+          <a className="button-primary" href="tel:865-269-2673">Call (865) 269-2673</a>
+          <Link className="service-cta-link" to="/contact">View Contact Details</Link>
+        </div>
+      </section>
   </div>
   )
 }

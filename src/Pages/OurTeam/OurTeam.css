@@ -1,17 +1,39 @@
+.team-intro {
+    padding-bottom: 1rem;
+}
+
 .our-team-section-wrapper {
-    padding: 1rem 3rem;
+    width: min(100% - 3rem, 1480px);
+    margin: 0 auto;
+    padding: 1rem 0 4rem;
+}
+
+.our-team-section-wrapper.row {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.our-team-section-wrapper > [class*="col"] {
+    display: flex;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .aboutSectionWrapper {
-    padding: 1rem 1.5rem;
-    margin: 1rem;
-    border-radius: '0.6rem';
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 18px 45px rgba(25, 36, 51, 0.1);
+    padding: 1.5rem;
+    margin: 1rem 0;
+    width: 100%;
 }
 
 .aboutSectionHeader {
-    padding: 0.5em 0;
+    color: #192433;
+    padding: 0.5em 0 0.15em;
     text-align: center;
-    font-size: 2em;
+    font-size: clamp(1.45rem, 3vw, 2em);
+    font-weight: 750;
 }
 
 .aboutSectionImage {
@@ -22,38 +44,50 @@
     width: 18em;
     border-radius: 50%;
     margin: 0.5rem auto;
-    box-shadow: 9px 5px 15px rgb(0 0 0 / 10%);
+    box-shadow: 0 14px 32px rgba(25, 36, 51, 0.16);
 }
 
 .aboutSectionText {
-    text-align: justify;
+    color: #374151;
+    line-height: 1.68;
+    text-align: left;
 }
 
 .aboutSectionText p {
-    text-indent: 2rem;
+    margin-bottom: 1rem;
 }
 
 .aboutSectionText h5 {
+    color: #1f2839;
     font-weight: bold;
-    text-align: center;
-    text-decoration: underline;
+    margin-top: 1.4rem;
+    text-align: left;
+    text-decoration: none;
 }
 
 .aboutSectionText ul {
-    padding: 0.25rem 3rem;
-    font-size: 0.9rem;
+    padding: 0.25rem 0 0.25rem 1.2rem;
+    font-size: 0.94rem;
 }
 
 .experience li {
+    border-left: 3px solid rgba(165, 15, 45, 0.24);
     list-style-type: none !important;
+    margin-bottom: 0.75rem;
+    padding-left: 0.75rem;
 }
 
 @media (max-width: 820px) {
     .our-team-section-wrapper {
-        padding: 0 0.5rem;
+        width: min(100% - 1rem, 42rem);
+        padding: 0 0 3rem;
+    }
+    .our-team-section-wrapper > [class*="col"] {
+        padding-left: 0;
+        padding-right: 0;
     }
     .aboutSectionWrapper {
-        margin: 1rem 0.25rem;
+        margin: 1rem 0;
         padding: 1rem 1rem;
     }
     .aboutSectionImage {

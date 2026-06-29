@@ -18,10 +18,10 @@ import './Issues.css'
 // let greatDes = "Climate change is real. We need to accept that as a nation and use that information to benefit us. Taxing fossil fuel industries and creating jobs and wealth from alternative energy sources will help every American."
 // let capitolDes = "Washington is as murky as ever since the 2016 election. We need a new era of transparency and accountability in D.C. and our current administration is not a part of that."
 
-const aboutDesc = "Blanchard Horton PLLC provides expertise in all areas of intellectual property practice, including patents, trademarks, copyrights, trade dress, and trade secrets.";
-const servicesDesc = "Patents, Trademarks, Copyrights, Trade Dress, and Trade Secrets.";
-const ourTeanDesc = "Meet our team of dedicated attorneys.";
-const contactDesc = "Find out how to get in touch with us.";
+const aboutDesc = "Learn how our boutique intellectual property practice helps clients protect technology assets with purpose.";
+const servicesDesc = "Patent, trademark, copyright, trade dress, and trade secret counsel for growing businesses.";
+const ourTeamDesc = "Meet attorneys with technical depth, litigation experience, and USPTO practice credentials.";
+const contactDesc = "Call our Oak Ridge office to discuss whether our IP counsel is the right fit for your matter.";
 
 class Issues extends Component {
 
@@ -37,12 +37,18 @@ render() {
 
 return(
   <div id="more">
+    <section className="section-shell home-pathways">
+      <p className="section-kicker">How we can help</p>
+      <div className="home-pathways-heading">
+        <h2 className="section-title">Focused counsel for the full life of an intellectual property asset.</h2>
+        <p className="section-lede">From early clearance and filing strategy through portfolio management, licensing, and enforcement, Blanchard Horton PLLC helps clients make practical decisions about valuable technology and brand rights.</p>
+      </div>
+    </section>
     <Row className="issuesWrapper justify-content-around">
       <Col lg="6" className="order-1 order-lg-1">
         <Pic
           title={"About"}
           description={aboutDesc}
-          bgColorValue={'#C41230'}
           img={tubes}
           link={'/about'} />
       </Col>
@@ -50,15 +56,13 @@ return(
         <Pic
         title={"Services"}
         description={servicesDesc}
-        bgColorValue={'#9FA1A4'}
         img={barometer}
         link={'/services'} />
       </Col>
       <Col lg="6" className="order-4 order-lg-3">
         <Pic
         title={"Our Team"}
-        description={ourTeanDesc}
-        bgColorValue={'#9FA1A4'}
+        description={ourTeamDesc}
         img={scales}
         link={'/our-team'} />
       </Col>
@@ -66,7 +70,6 @@ return(
       <Pic
       title={"Contact"}
       description={contactDesc}
-      bgColorValue={'#C41230'}
       img={cards}
       link={'/contact'} />
       </Col>
