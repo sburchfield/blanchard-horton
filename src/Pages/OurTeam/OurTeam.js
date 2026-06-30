@@ -1,4 +1,5 @@
 import {Row} from 'reactstrap'
+import { Link } from 'react-router-dom';
 
 import JohnImage from '../../images/john-avatar.jpg';
 import JakeImage from '../../images/jake-avatar.jpg';
@@ -25,10 +26,20 @@ const ourTeam = () => {
             <Row className="justify-content-center our-team-section-wrapper">
             <div className="col-12 col-lg-6">
                 <div className="aboutSectionWrapper card">
-                <div>
+                <div className="profileHeader">
                     <div className="aboutSectionImage" style={{backgroundImage: `url( ${JohnImage} )`}}></div>
+                    <div className="profileIntro">
+                        <p className="profileRole">Member | Patent Attorney</p>
+                        <h4 className="aboutSectionHeader">JONATHAN M. BLANCHARD, Ph.D.</h4>
+                        <p>Patent portfolio strategy, technology management, opinions, enforcement, and prosecution for complex chemical, material, electrical, and mechanical technologies.</p>
+                        <div className="profileChips" aria-label="Jonathan Blanchard focus areas">
+                            <span>USPTO</span>
+                            <span>Patent Prosecution</span>
+                            <span>Chemistry</span>
+                            <span>Portfolio Strategy</span>
+                        </div>
+                    </div>
                 </div>
-                <h4 className="aboutSectionHeader">JONATHAN M. BLANCHARD, Ph.D.</h4>
                 <div>
                     <div>
                         <div className="aboutSectionText">
@@ -92,10 +103,20 @@ const ourTeam = () => {
             </div>
             <div className="col-12 col-lg-6">
                 <div className="aboutSectionWrapper card">
-                <div>
+                <div className="profileHeader">
                     <div className="aboutSectionImage" style={{backgroundImage: `url(${JakeImage})`}}></div>
+                    <div className="profileIntro">
+                        <p className="profileRole">Member | Patent Attorney</p>
+                        <h4 className="aboutSectionHeader">JACOB G. HORTON</h4>
+                        <p>Trademark and patent counsel with experience in brand portfolios, IP transactions, enforcement, litigation, mechanical systems, and materials science.</p>
+                        <div className="profileChips" aria-label="Jacob Horton focus areas">
+                            <span>USPTO</span>
+                            <span>Trademarks</span>
+                            <span>Brand Management</span>
+                            <span>Engineering</span>
+                        </div>
+                    </div>
                 </div>
-                <h4 className="aboutSectionHeader">JACOB G. HORTON</h4>
                 <div>
                     <div>
                         <div className="aboutSectionText">
@@ -158,6 +179,16 @@ const ourTeam = () => {
                 </div>
             </div>
             </Row>
+            <section className="team-cta">
+                <div>
+                    <p className="section-kicker">Work with the team</p>
+                    <h2>Bring technical depth to your intellectual property strategy.</h2>
+                </div>
+                <div className="button-row">
+                    <a className="button-primary" href="tel:865-269-2673">Call (865) 269-2673</a>
+                    <Link className="team-cta-link" to="/contact">Contact the Firm</Link>
+                </div>
+            </section>
         </div>
     ) 
 }
